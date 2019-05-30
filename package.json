@@ -1,0 +1,18 @@
+{
+  "name": "@remvst/path-finder",
+  "version": "1.0.0",
+  "description": "Simple pathfinder",
+  "main": "src/path-finder.js",
+  "scripts": {
+    "test": "./node_modules/jasmine/bin/jasmine.js",
+    "coverage": "istanbul cover ./node_modules/jasmine/bin/jasmine.js"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jasmine": "^3.4.0"
+  }
+}

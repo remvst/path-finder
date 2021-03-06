@@ -1,10 +1,13 @@
-'use strict';
+import PathFinder from '../src/path-finder';
 
-const PathFinder = require('../src/path-finder');
+type StateType = {
+    'row': number,
+    'col': number
+};
 
 describe('a path finder', () => {
 
-    let maze;
+    let maze: number[][];
 
     beforeEach(() => {
         maze = [
@@ -16,11 +19,14 @@ describe('a path finder', () => {
         ];
     });
 
-    function newCell(row, col) {
+    function newCell(
+        row: number,
+        col: number,
+    ): StateType {
         return {'row': row, 'col': col};
     }
 
-    function createPathFinder() {
+    function createPathFinder(): PathFinder<StateType> {
         return new PathFinder({
             'hash': position => position.row + '-' + position.col,
             'neighbors': position => {

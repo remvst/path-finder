@@ -1,14 +1,14 @@
 {
   "name": "@remvst/path-finder",
-  "version": "2.0.0",
+  "version": "2.0.4",
   "description": "Simple pathfinder",
-  "main": "lib/index.js",
+  "main": "lib/path-finder.js",
   "scripts": {
     "test": "ts-node node_modules/jasmine/bin/jasmine --config=spec/support/jasmine.json",
     "coverage": "nyc -r lcov -e .ts -x \"spec/**/*.spec.ts\" npm run test",
     "build": "tsc"
   },
-  "author": "",
+  "author": "Rémi Vansteelandt",
   "license": "UNLICENSED",
   "dependencies": {},
   "devDependencies": {
